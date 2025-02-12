@@ -1,0 +1,152 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&amp;display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6I9uUAdx9x0wzxj75zu3uNncXyqf9gC3/j2j+jY+4mXf5j+w9pPvoIP+0abpQ/C9Mh95Fh59m7c99VA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <style>
+      body {
+        font-family: "Press Start 2P", cursive;
+        background-color: #1a1a2e;
+        color: white;
+      }
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #e7dada;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        max-width: 1080px;
+        text-align: center;
+        z-index: 1000;
+      }
+      .popup button {
+        background-color: #ffcc00;
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen p-4 relative">
+    <!-- Header -->
+    <header class="w-full max-w-4xl p-4 bg-gray-800 rounded-lg shadow-lg text-center">
+      <a href="index.html">
+        <h1 class="text-4xl font-bold text-yellow-400 hover:text-yellow-500">MY PORTOFOLIO WEBSITE</h1>
+      </a>
+      <p class="mt-2 text-xl">Welcome to My Website</p>
+    </header>
+
+    <!-- Main Menu -->
+    <nav class="w-full max-w-4xl p-4 mt-4 bg-gray-800 rounded-lg shadow-lg">
+      <ul class="flex justify-around">
+        <li>
+          <a href="index.html" class="text-yellow-400 hover:text-yellow-500"> Home </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="about.html"> About </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="portofolio.html"> Portofolio </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="blog.html"> Blog </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="contact.html"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- About Me Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg" id="about">
+      <a href="about.html"><h2 class="text-3xl font-bold text-yellow-400 hover:text-yellow-500">About Me</h2></a>
+      <p class="mt-4 text-lg">
+        Hello! Saya Bagas Pangestu, biasa dipanggil Bagas, merupakan Mahasiswa Universitas Muhammadiyah Surakarta jurusan Ilmu Quran dan Tafsir Semester Delapan (8). Memiliki ketertarikan pada bidang menulis, desain grafis dan pengelolaan
+        media sosial. memiliki kepribadian yang mudah bergaul, teliti, cekatan dan bisa bekerja sama dalam tim.
+      </p>
+    </section>
+    <!-- Projects Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg" id="portfolio">
+      <a href="portofolio.html"><h2 class="text-3xl font-bold text-yellow-400 hover:text-yellow-500">Projects</h2></a>
+      <div class="grid grid-cols-1 gap-4 mt-4 md:grid-cols-2">
+        <!-- Project 1 -->
+        <div class="p-4 bg-gray-700 rounded-lg">
+          <img alt="Project 1 screenshot" class="w-full h-40 rounded-lg" height="200" src="aset/portofolio-01.jpg" width="300" />
+          <h3 class="mt-2 text-xl font-bold hover:text-yellow-500"><a href="portofolio.html">Project 1</a></h3>
+          <p class="mt-1">laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <!-- Project 2 -->
+        <div class="p-4 bg-gray-700 rounded-lg">
+          <img alt="Project 2 screenshot" class="w-full h-40 rounded-lg" height="200" src="aset/portofolio-02.jpg" width="300" />
+          <h3 class="mt-2 text-xl font-bold hover:text-yellow-500"><a href="portofolio.html">Project 2</a></h3>
+          <p class="mt-1">Ut enim ad minim veniam, quis nostrud ullamco.</p>
+        </div>
+        <!-- Project 3 -->
+        <div class="p-4 bg-gray-700 rounded-lg">
+          <img alt="Project 3 screenshot" class="w-full h-40 rounded-lg" height="200" src="aset/portofolio-03.jpg" width="300" />
+          <h3 class="mt-2 text-xl font-bold hover:text-yellow-500"><a href="portofolio.html">Project 3</a></h3>
+          <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <!-- Project 4 -->
+        <div class="p-4 bg-gray-700 rounded-lg">
+          <img alt="Project 4 screenshot" class="w-full h-40 rounded-lg" height="200" src="aset/portofolio-04.jpg" width="300" />
+          <h3 class="mt-2 text-xl font-bold hover:text-yellow-500"><a href="portofolio.html">Project 4</a></h3>
+          <p class="mt-1">sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Blog Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg" id="blog">
+      <a href="blog.html"><h2 class="text-3xl font-bold text-yellow-400 hover:text-yellow-500">Blog</h2></a>
+      <div class="grid grid-cols-1 gap-4 mt-4">
+        <div class="p-4 bg-gray-700 rounded-lg">
+          <a href="blog.html"> <h3 class="mt-2 text-xl font-bold text-yellow-400 hover:text-yellow-500">What is Lorem Ipsum?</h3> </a>
+          <p class="mt-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+        <div class="p-4 bg-gray-700 rounded-lg">
+          <a href="blog.html"> <h3 class="mt-2 text-xl font-bold text-yellow-400 hover:text-yellow-500">Where does it come from?</h3> </a>
+          <p class="mt-1">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+        </div>
+      </div>
+    </section>
+    <!-- Social Media Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg text-center">
+      <h2 class="text-3xl font-bold text-yellow-400">Follow Me</h2>
+      <div class="flex justify-around mt-4">
+        <a href="https://wa.me/089629567474" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/bagas_2s" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/bagas.pangestu3" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/@yibaiyi2001?_t=ZS-8tqrqGEhDO6&_r=1" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Popup Message -->
+    <div class="popup" id="popupMessage">
+      <p>Selamat datang di situs web portofolio saya! Apakah ada yang bisa saya bantu hari ini?</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

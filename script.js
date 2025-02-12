@@ -1,0 +1,23 @@
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(function () {
+    document.getElementById("popupMessage").style.display = "block";
+  }, 3000);
+
+  document.getElementById("closePopup").addEventListener("click", function () {
+    document.getElementById("popupMessage").style.display = "none";
+  });
+});
+
+const contactForm = document.getElementById("contactForm");
+const popupSend = document.getElementById("popupSend");
+const closePopup = document.getElementById("closePopup");
+
+contactForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  popupSend.style.display = "block";
+});
+
+closePopup.addEventListener("click", () => {
+  popupSend.style.display = "none";
+  location.reload();
+});

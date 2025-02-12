@@ -1,0 +1,85 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <style>
+      body {
+        font-family: "Press Start 2P", cursive;
+        background-color: #1a1a2e;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <!-- Header -->
+    <header class="w-full max-w-4xl p-4 bg-gray-800 rounded-lg shadow-lg text-center">
+      <h1 class="text-4xl font-bold text-yellow-400">My Blog</h1>
+      <p class="mt-2 text-xl">Sharing my thoughts and experiences</p>
+    </header>
+    <!-- Main Menu -->
+    <nav class="w-full max-w-4xl p-4 mt-4 bg-gray-800 rounded-lg shadow-lg">
+      <ul class="flex justify-around">
+        <li>
+          <a href="index.html" class="text-yellow-400 hover:text-yellow-500"> Home </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="about.html"> About </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="portofolio.html"> Portofolio </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="blog.html"> Blog </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="contact.html"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Blog Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg">
+      <h2 class="text-3xl font-bold text-yellow-400 hover:text-yellow-500"><a href="#">Blog Posts</a></h2>
+      <div class="grid grid-cols-1 gap-4 mt-4">
+        <!-- Blog Post 1 -->
+        <div class="flex p-4 bg-gray-700 rounded-lg">
+          <img src="aset/blog-01.jpg" alt="Blog Post 1 image" class="w-40 h-40 rounded-lg" />
+          <div class="ml-4">
+            <h3 class="text-xl text-yellow-400 font-bold">Blog Post 1</h3>
+            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-500">Read more</a>
+          </div>
+        </div>
+        <!-- Blog Post 2 -->
+        <div class="flex p-4 bg-gray-700 rounded-lg">
+          <img src="aset/blog-02.jpg" alt="Blog Post 2 image" class="w-40 h-40 rounded-lg" />
+          <div class="ml-4">
+            <h3 class="text-xl text-yellow-400 font-bold">Blog Post 2</h3>
+            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-500">Read more</a>
+          </div>
+        </div>
+        <!-- Blog Post 3 -->
+        <div class="flex p-4 bg-gray-700 rounded-lg">
+          <img src="aset/blog-03.jpg" alt="Blog Post 3 image" class="w-40 h-40 rounded-lg" />
+          <div class="ml-4">
+            <h3 class="text-xl text-yellow-400 font-bold">Blog Post 3</h3>
+            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-500">Read more</a>
+          </div>
+        </div>
+        <!-- Blog Post 4 -->
+        <div class="flex p-4 bg-gray-700 rounded-lg">
+          <img src="aset/blog-04.jpg" alt="Blog Post 4 image" class="w-40 h-40 rounded-lg" />
+          <div class="ml-4">
+            <h3 class="text-xl text-yellow-400 font-bold">Blog Post 4</h3>
+            <p class="mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+            <a href="#" class="text-yellow-400 hover:text-yellow-500">Read more</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

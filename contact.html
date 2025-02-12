@@ -1,0 +1,104 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <style>
+      body {
+        font-family: "Press Start 2P", cursive;
+        background-color: #1a1a2e;
+        color: white;
+      }
+      .popup {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #e7dada;
+        color: rgb(0, 0, 0);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: none;
+        max-width: 1080px;
+        text-align: center;
+        z-index: 1000;
+      }
+      .popup button {
+        background-color: #ffcc00;
+        color: black;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body class="flex flex-col items-center justify-center min-h-screen p-4">
+    <!-- Header -->
+    <header class="w-full max-w-4xl p-4 bg-gray-800 rounded-lg shadow-lg text-center">
+      <h1 class="text-4xl font-bold text-yellow-400">Contact Me</h1>
+      <p class="mt-2 text-xl">Get in touch with me</p>
+    </header>
+    <!-- Main Menu -->
+    <nav class="w-full max-w-4xl p-4 mt-4 bg-gray-800 rounded-lg shadow-lg">
+      <ul class="flex justify-around">
+        <li>
+          <a href="index.html" class="text-yellow-400 hover:text-yellow-500"> Home </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="about.html"> About </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="portofolio.html"> Portofolio </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="blog.html"> Blog </a>
+        </li>
+        <li>
+          <a class="text-yellow-400 hover:text-yellow-500" href="contact.html"> Contact </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Contact Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg text-center">
+      <h2 class="text-3xl font-bold text-yellow-400">Contact</h2>
+      <form class="mt-4" id="contactForm">
+        <div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+          <input type="text" placeholder="Name" class="p-2 bg-gray-700 rounded-lg" required />
+          <input type="email" placeholder="Email" class="p-2 bg-gray-700 rounded-lg" required />
+        </div>
+        <textarea placeholder="Message" class="w-full p-2 mt-4 bg-gray-700 rounded-lg" required></textarea>
+        <button type="submit" class="w-full p-2 mt-4 bg-yellow-400 rounded-lg hover:bg-yellow-500">Send</button>
+      </form>
+    </section>
+    <!-- Social Media Section -->
+    <section class="w-full max-w-4xl p-4 mt-8 bg-gray-800 rounded-lg shadow-lg text-center">
+      <h2 class="text-3xl font-bold text-yellow-400">Follow Me</h2>
+      <div class="flex justify-around mt-4">
+        <a href="https://wa.me/089629567474" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+        <a href="https://www.instagram.com/bagas_2s" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+        <a href="https://www.facebook.com/bagas.pangestu3" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+        <a href="https://www.tiktok.com/@yibaiyi2001?_t=ZS-8tqrqGEhDO6&_r=1" target="_blank" class="text-yellow-400 hover:text-yellow-500">
+          <i class="fab fa-tiktok fa-2x"></i>
+        </a>
+      </div>
+    </section>
+    <!-- Popup Message -->
+    <div class="popup" id="popupSend">
+      <p>Terima kasih atas pesan Anda! Saya akan segera membalasnya.</p>
+      <button id="closePopup">Close</button>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
