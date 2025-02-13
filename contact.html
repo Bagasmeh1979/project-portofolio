@@ -6,36 +6,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <style>
-      body {
-        font-family: "Press Start 2P", cursive;
-        background-color: #1a1a2e;
-        color: white;
-      }
-      .popup {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        background-color: #e7dada;
-        color: rgb(0, 0, 0);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        display: none;
-        max-width: 1080px;
-        text-align: center;
-        z-index: 1000;
-      }
-      .popup button {
-        background-color: #ffcc00;
-        color: black;
-        border: none;
-        padding: 10px;
-        border-radius: 5px;
-        cursor: pointer;
-        margin-top: 10px;
-      }
+    <style type="text/css">
+      @import "style.css";
     </style>
   </head>
   <body class="flex flex-col items-center justify-center min-h-screen p-4">
@@ -45,22 +17,29 @@
       <p class="mt-2 text-xl">Get in touch with me</p>
     </header>
     <!-- Main Menu -->
-    <nav class="w-full max-w-4xl p-4 mt-4 bg-gray-800 rounded-lg shadow-lg">
-      <ul class="flex justify-around">
-        <li>
-          <a href="index.html" class="text-yellow-400 hover:text-yellow-500"> Home </a>
+    <nav class="w-full max-w-4xl p-4 mt-4 bg-gray-800 rounded-lg shadow-lg mx-auto">
+      <div class="flex justify-center items-center md:hidden">
+        <button id="menu-toggle" class="flex flex-col items-center justify-center">
+          <div class="w-6 h-1 bg-yellow-400 my-1"></div>
+          <div class="w-6 h-1 bg-yellow-400 my-1"></div>
+          <div class="w-6 h-1 bg-yellow-400 my-1"></div>
+        </button>
+      </div>
+      <ul id="mobile-menu" class="menu hidden md:flex flex-col md:flex-row justify-around items-center mt-4 md:mt-0">
+        <li class="my-2 md:my-0">
+          <a href="index.html" class="text-yellow-400 hover:text-yellow-500">Home</a>
         </li>
-        <li>
-          <a class="text-yellow-400 hover:text-yellow-500" href="about.html"> About </a>
+        <li class="my-2 md:my-0">
+          <a class="text-yellow-400 hover:text-yellow-500" href="about.html">About</a>
         </li>
-        <li>
-          <a class="text-yellow-400 hover:text-yellow-500" href="portofolio.html"> Portofolio </a>
+        <li class="my-2 md:my-0">
+          <a class="text-yellow-400 hover:text-yellow-500" href="portofolio.html">Portofolio</a>
         </li>
-        <li>
-          <a class="text-yellow-400 hover:text-yellow-500" href="blog.html"> Blog </a>
+        <li class="my-2 md:my-0">
+          <a class="text-yellow-400 hover:text-yellow-500" href="blog.html">Blog</a>
         </li>
-        <li>
-          <a class="text-yellow-400 hover:text-yellow-500" href="contact.html"> Contact </a>
+        <li class="my-2 md:my-0">
+          <a class="text-yellow-400 hover:text-yellow-500" href="contact.html">Contact</a>
         </li>
       </ul>
     </nav>
